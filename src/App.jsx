@@ -19,11 +19,13 @@ export default function App() {
       {/* Your pages */}
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/product/:id" element={<ProductDetail />} />
+        <Route path="/product/:id" element={<ProductDetail setOpen={setCartOpen} />}/>
         <Route path="/success" element={<Success />} />
+        
       </Routes>
 
       {/* Cart Drawer (always mounted) */}
+      <ProductDetail setOpen={setCartOpen} />
       <CartDrawer open={cartOpen} setOpen={setCartOpen} />
     </>
   );

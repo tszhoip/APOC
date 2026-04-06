@@ -1,5 +1,11 @@
 import Stripe from "stripe";
 
+export const config = {
+  api: {
+    bodyParser: true,
+  },
+};
+
 const stripe = new Stripe(process.env.STRIPE_SECRET_KEY);
 
 export default async function handler(req, res) {
@@ -38,4 +44,8 @@ export default async function handler(req, res) {
     console.error("Stripe error:", err);
     return res.status(500).json({ error: err.message });
   }
+}
+
+if (!process.env.STRIPE_SECRET_KEY) {
+  return res.status(500).json({ error: "Missing Stripe key" });
 }
