@@ -5,7 +5,7 @@ import Home from "./pages/Home";
 import ProductDetail from "./pages/ProductDetail";
 import Success from "./pages/Success";
 import CartDrawer from "./components/CartDrawer";
-import Navbar from "./components/NavBar";
+import NavBar from "./components/NavBar";
 
 export default function App() {
   const [cartOpen, setCartOpen] = useState(false);
@@ -27,7 +27,7 @@ export default function App() {
 
       {/* Cart Drawer (always mounted) */}
       <ProductDetail setOpen={setCartOpen} />
-      <Navbar setCartOpen={setCartOpen} />
+      <NavBar setCartOpen={setCartOpen} />
       <CartDrawer open={cartOpen} setOpen={setCartOpen} />
     </>
   );

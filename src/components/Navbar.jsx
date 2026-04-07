@@ -1,7 +1,7 @@
 import { useState } from "react";
 import Menu from "./Menu";
 
-export default function Navbar({ setCartOpen }) {
+export default function NavBar({ setCartOpen }) {
   const [menuOpen, setMenuOpen] = useState(false);
 
   return (
