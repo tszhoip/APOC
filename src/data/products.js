@@ -40,5 +40,47 @@ export const products = [
     price: 28,
     description: "Mockup",
     images: ["/images/AS-6.jpg"]
+  },
+  {
+    id: 7,
+    name: "APOC 02",
+    price: 28,
+    description: "Mockup",
+    images: ["/images/AS-6.jpg"]
+  },
+  {
+    id: 8,
+    name: "APOC 02",
+    price: 28,
+    description: "Mockup",
+    images: ["/images/AS-6.jpg"]
+  },
+  {
+    id: 9,
+    name: "APOC 02",
+    price: 28,
+    description: "Mockup",
+    images: ["/images/AS-6.jpg"]
+  },
+  {
+    id: 10,
+    name: "APOC 02",
+    price: 28,
+    description: "Mockup",
+    images: ["/images/AS-6.jpg"]
+  },
+  {
+    id: 11,
+    name: "APOC 02",
+    price: 28,
+    description: "Mockup",
+    images: ["/images/AS-6.jpg"]
+  },
+  {
+    id: 12,
+    name: "APOC 02",
+    price: 28,
+    description: "Mockup",
+    images: ["/images/AS-6.jpg"]
   }
 ];

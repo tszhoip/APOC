@@ -5,7 +5,7 @@ import { useNavigate } from "react-router-dom";
 
 
 
-export default function ProductDetail({ setOpen }) {
+export default function ProductDetail({ setCartOpen }) {
     const { id } = useParams();
     const { addToCart } = useCart();
     const navigate = useNavigate();
@@ -46,7 +46,7 @@ export default function ProductDetail({ setOpen }) {
                         onClick={() => {
                             console.log("clicked");
                             addToCart(product);
-                            setOpen(true);
+                            setCartOpen(true);
                         }}>
                         Add to Cart
                     </button>

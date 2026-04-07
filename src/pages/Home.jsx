@@ -2,6 +2,7 @@ import { useState } from "react";
 import { products } from "../data/products";
 import ProductGrid from "../components/ProductGrid";
 import CartDrawer from "../components/CartDrawer";
+import NavBar from "../components/NavBar";
 
 export default function Home() {
   const [sort, setSort] = useState("default");
@@ -24,6 +25,7 @@ export default function Home() {
       </select>
 
       <ProductGrid products={sorted} />
+      <NavBar />
     </div>
   );
 }
